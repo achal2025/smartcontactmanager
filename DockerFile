@@ -6,7 +6,7 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR file into the container
-COPY /SmartContactsManager/target/SmartContactsManager-0.0.1-SNAPSHOT.jar app.jar
+COPY target/SmartContactsManager-0.0.1-SNAPSHOT.jar app.jar
 
 # Set environment variables for PostgreSQL connection
 ENV SPRING_DATASOURCE_URL=jdbc:postgresql://dpg-curf5iqj1k6c73arnc4g-a.oregon-postgres.render.com:5432/smartcontact_8n0h
